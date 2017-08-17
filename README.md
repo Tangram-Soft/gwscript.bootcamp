@@ -31,12 +31,11 @@ git clone https://github.com/Tangram-Soft/dpanda.ide.git
 once git is done, run the following:
 ```
 cd dpanda.ide
-
 docker create -it -v %cd%:/drouter/config -v %cd%/local:/drouter/local -p 9090:9090 -p 9080:9080 -p 22:22 -p 8000-8010:8000-8010 -p 5550:5550 -p 5554:5554 -e DATAPOWER_ACCEPT_LICENSE=true -e DATAPOWER_INTERACTIVE=true --name idg.dpanda ibmcom/datapower:7.5.2.8.289749
 docker start idg.dpanda
 ```
 
-Then run the following:
+Then run the following from DataPower's CLI:
 ```
 switch dpanda;co;crypto;keygen CN dpanda-gui rsa 2048 gen-sscert;exit;exit;switch default
 user dpanda;access-level privileged;password dpanda;suppress-password-change;exit
