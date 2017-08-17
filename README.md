@@ -13,13 +13,13 @@ DockerToolbox provides us a virtual machine that runs docker on top of it.
 Download DockerToolbox from here: https://download.docker.com/win/stable/DockerToolbox.exe
 
 Install Docker Toolbox following the installation wizard.
-__Make sure you choose full installation (Including gicmdt).__
+__Make sure you choose full installation (Including git cmd).__
 
 ###### Let's get our docker environment ready.
-Open cmd
-Execute the following command:
-docker-machine create --virtualbox-cpu-count "3" --virtualbox-memory "4096" boot2docker
-```docker pull ibmcom/datapower:7.5.2.8.289749```
+Open cmd  
+Execute the following command:  
+```docker-machine create --virtualbox-cpu-count "3" --virtualbox-memory "4096" boot2docker
+docker pull ibmcom/datapower:7.5.2.8.289749```
 
 We created a special IDE so it'll be a lot more fun to develop with :)
 ```git clone https://github.com/Tangram-Soft/dpanda.ide.git```
