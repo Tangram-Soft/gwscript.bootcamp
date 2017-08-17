@@ -1,6 +1,6 @@
 ## Exercise 5: Access the service variables
 Service variables are an essential part of a traveling transaction.
-Access this module with a require('service-metadata') statement.
+Access this module with a ```require('service-metadata')``` statement.
 
 You can use the getVar(), setVar() and list() methods to do actions against service variables.
 

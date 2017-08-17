@@ -1,6 +1,6 @@
 ## Exercise 6: Querystrings
 The querystring module provides an easy way to deal with query strings.
-Query strings is an essential part when it comes to REST APIs.
+The query string is an essential part when it comes to REST APIs.
 While in the past we usually used the convert query params action to deal with query string, now we can natively work with those in GatewayScript.
 
 To access the functions in the querystring module, use the require('querystring') statement.
@@ -16,10 +16,7 @@ Use a REST client or chrome developer tools in order to send a query string as p
 ```
 {
   "key1": "value1",
-  "key2": {
-    "value2a",
-    "value2b"
-  },
+  "key2": ["value2a","value2b"],
   "key3": "value3"
 }
 ```
