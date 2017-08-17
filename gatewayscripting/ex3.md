@@ -12,9 +12,11 @@ We have 4 different ReadAs functions:
 In all of our exercises today we will be working with JSON payloads.
 
 The syntax for the ReadAs functions is:
+```
 session.context.readAsJSON (errorObject, jsonObject){
   ...
 })
+```
 
 context - Is the name of the data that is used in a processing action. The context can be INPUT, input, or a named context.
 
@@ -30,13 +32,17 @@ When contexts are small, use the readAsBuffer() function. Use the readAsBuffers(
 ## The challenge
 
 Place the following message in your request body:
+```
 {
   "message" : "Hi from GatewayScript!"
 }
+```
 
 And output the following message:
+```
 {
   "echo" : {
     "message" : "Hi from GatewayScript!"
   }
 }
+```
