@@ -27,7 +27,7 @@ jsonObject - The JSON document. It contains a JSON representation of the context
 You are probably asking yourself what the difference between buffer and buffers.
 When contexts are small, use the readAsBuffer() function. Use the readAsBuffers() function when a context is large. The readAsBuffer() function requires a contiguous memory allocation. The readAsBuffer() function is faster but is more demanding on the memory system. The readAsBuffers() function does not require contiguous memory to populate the Buffers object.
 
-## The challenge:
+## The challenge
 
 Place the following message in your request body:
 {

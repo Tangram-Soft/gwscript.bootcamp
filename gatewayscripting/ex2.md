@@ -7,8 +7,10 @@ We can change the context using write().
 ## Note
 write() method in general supports writing to any contexts and not only the output context.
 
-## The challenge:  
+## The challenge
 Write the following JSON object to your output context:
+```
 {
   "message" : "success"
 }
+```
