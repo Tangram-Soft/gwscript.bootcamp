@@ -18,14 +18,20 @@ __Make sure you choose full installation (Including git cmd).__
 ###### Let's get our docker environment ready.
 Open cmd  
 Execute the following command:  
-```docker-machine create --virtualbox-cpu-count "3" --virtualbox-memory "4096" boot2docker
-docker pull ibmcom/datapower:7.5.2.8.289749```
+```
+docker-machine create --virtualbox-cpu-count "3" --virtualbox-memory "4096" boot2docker
+docker pull ibmcom/datapower:7.5.2.8.289749
+```
 
 We created a special IDE so it'll be a lot more fun to develop with :)
-```git clone https://github.com/Tangram-Soft/dpanda.ide.git```
+```
+git clone https://github.com/Tangram-Soft/dpanda.ide.git
+```
 
 once git is done, run the following:
-```cd dpanda.ide
+```
+cd dpanda.ide
+
 docker create -it -v %cd%:/drouter/config -v %cd%/local:/drouter/local -p 9090:9090 -p 9080:9080 -p 22:22 -p 8000-8010:8000-8010 -p 5550:5550 -p 5554:5554 -e DATAPOWER_ACCEPT_LICENSE=true -e DATAPOWER_INTERACTIVE=true --name idg.dpanda ibmcom/datapower:7.5.2.8.289749
 docker start idg.dpanda
 ```
