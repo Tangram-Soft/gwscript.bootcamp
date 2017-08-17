@@ -13,7 +13,7 @@ In all of our exercises today we will be working with JSON payloads.
 
 The syntax for the ReadAs functions is:
 ```
-session.context.readAsJSON (errorObject, jsonObject){
+session.context.readAsJSON(function (errorObject, jsonObject){
   ...
 })
 ```
